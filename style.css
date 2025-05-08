@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    background-color: #000000;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.nav{
+    position: absolute;
+    top: 2.5%;
+    left: 25px;
+    width: calc(100vw - 470px);
+    background-color: #141212;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav .logo{
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.nav .bar{
+    display: none;
+    display: flex;
+    justify-content: end;
+}
+.nav .logo h3{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.nav .bar img{
+    margin-right: 50px;
+    filter: invert(100%);
+    display: none;
+}
+.sidebar{
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    top: 2.5%;
+    right: 20px;
+    width: 400px;
+    height: 95%;
+    background-color: #141212;
+    overflow-y: scroll;
+}
+.sidebar .top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .bottom{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+.sidebar .bottom .card{
+    width: 85%;
+    height: 100px;
+    border: 1px dashed #fff;
+    border-radius: 5px;
+    display: flex;
+}
+.sidebar .bottom .card .content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sidebar .bottom .card .play{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    cursor: pointer;
+}
+.playlists{
+    position: absolute;
+    top: calc(5vh + 70px );
+    left: 25px;
+    width: calc(100vw - 470px);
+    background-color: #141212;
+    /* min-height: calc(90vh - 140px); */
+    max-height: calc(90vh - 140px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.playlists h1{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.controls{
+    position: absolute;
+    bottom: 2.5%;
+    left: 25px;
+    width: calc(100vw - 470px);
+    background-color: #141212;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.controls .control{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls .slider{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.controls .slider input{
+    width: 80%;
+}
+.controls .sound{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    filter: invert(100%);
+}
+.controls .sound input{
+    width: 40%;
+}
+.playlists .cards{
+    width: 100%;
+    height: calc((90vh - 120px) - 40px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 40px;
+    /* background-color: #fff; */
+}
+.playlists .cards .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+    margin-top: 50px;
+}
+.row:nth-child(1){
+    margin-top: 0px;
+}
+.row:nth-last-child(1){
+    margin-bottom: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #000;
+    width: 10px;
+}
+.playlists .cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 300px;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+.playlists .cards .card .top{
+    width: 100%;
+    height: 100px;
+    background-image: url('img/sam.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+.playlists .cards .card .bottom{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
