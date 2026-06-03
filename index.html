@@ -3,188 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VersoVerse</title>
+    <title>MsVerse</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="main">
-    <div class="nav">
-        <div class="logo">
-            <h3>MsVerse</h3>
+    <div class="app-container">
+        <!-- Main Content Area -->
+        <div class="content-wrapper">
+            <!-- Top Navigation -->
+            <div class="nav">
+                <div class="logo">
+                    <h3>MsVerse</h3>
+                </div>
+                <div class="bar">
+                    <img width="24" src="img/bars.svg" alt="Menu">
+                </div>
+            </div>
+
+            <!-- Playlists Section -->
+            <div class="playlists">
+                <h1>Your Playlists</h1>
+                <div class="cards">
+                    <!-- Playlists will be loaded here dynamically -->
+                </div>
+            </div>
         </div>
-        <div class="bar">
-            <img width="20" src="img/bars.svg" alt="">
+
+        <!-- Sidebar (Tracks) -->
+        <div class="sidebar">
+            <div class="top">
+                <img width="250" src="img/mscoder.png" alt="MsCoder">
+            </div>
+            <div class="bottom">
+                <!-- Tracks will be loaded here dynamically -->
+            </div>
         </div>
     </div>
-    <div class="sidebar">
-        <div class="top"><img width="300" src="img/mscoder.png" alt=""></div>
-        <div class="bottom">
-            <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="content">
-                    <h3 class="songName">Song Name</h3>
-                    <p class="duration">Time</p>
-            </div>
-            <div class="play"><img width="50" src="img/play.svg" alt=""></div>
-        </div>
-        
-        </div>
-    </div>
-    <div class="playlists">
-        <h1>Playlists</h1>
-        <div class="cards">
-            <div class="row"><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div></div>
-            <div class="row"><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div><div class="card">
-                <div class="top">
-                </div>
-                <div class="bottom">
-                    <h3>Playlist Name</h3>
-                    <h5>Total Songs</h5>
-                    <h5>Author</h5>
-                    <img width="50" src="img/play.svg" alt="">
-                    </div>
-            </div></div>
-        </div>
-        
-    </div>
+
+    <!-- Bottom Controls -->
     <div class="controls">
-        <div class="control"><img width="40" src="img/play.svg" alt=""></div>
-        <div class="slider"><p class="time">0:0</p><input type="range"><p class="final">4:30</p></div>
-        <div class="sound">
-            <img width="30" src="img/sound.svg" alt="Sound">
-            <input type="range">
+        <div class="control-left">
+            <div class="now-playing">
+                <span class="np-title" id="np-title">—</span>
+                <span class="np-playlist" id="np-playlist"></span>
+            </div>
+        </div>
+
+        <div class="control-center">
+            <div class="ctrl-buttons">
+                <!-- Previous Track -->
+                <button class="ctrl-btn" id="btn-prev" title="Previous track">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                </button>
+                <!-- Skip Back 10s -->
+                <button class="ctrl-btn" id="btn-skip-back" title="Skip back 10s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                        <text x="12" y="15.5" font-size="5.5" text-anchor="middle" fill="currentColor" font-family="Inter,sans-serif" font-weight="bold">10</text>
+                    </svg>
+                </button>
+                <!-- Play / Pause -->
+                <button class="ctrl-btn play-pause-btn" id="btn-play" title="Play / Pause">
+                    <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <!-- Skip Forward 10s -->
+                <button class="ctrl-btn" id="btn-skip-fwd" title="Skip forward 10s">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"/>
+                        <text x="12" y="15.5" font-size="5.5" text-anchor="middle" fill="currentColor" font-family="Inter,sans-serif" font-weight="bold">10</text>
+                    </svg>
+                </button>
+                <!-- Next Track -->
+                <button class="ctrl-btn" id="btn-next" title="Next track">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                </button>
+            </div>
+            <div class="slider">
+                <span class="time">0:00</span>
+                <input type="range" min="0" max="100" value="0">
+                <span class="final">0:00</span>
+            </div>
+        </div>
+
+        <div class="control-right">
+            <div class="sound">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="vol-icon"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                <input type="range" min="0" max="100" value="100">
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
