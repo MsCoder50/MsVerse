@@ -27,10 +27,14 @@ app.get('/stream/:playlist/:file',(req,res)=>{
         return res.status(400).send("Required Range Header.")
     }
 
-    const CHUNK_SIZE = 10 ** 6;
+    const CHUNK_SIZE = 1000 * 1000; // 1MB chunk size
     const parts = range.replace(/bytes=/,"").split("-");
     const start = parseInt(parts[0], 10);
-    const end = parts[1] ? parseInt(parts[1], 10) : metadata.size - 1;
+    const end = Math.min(
+        parts[1] ? parseInt(parts[1], 10) : metadata.size - 1,
+        start + CHUNK_SIZE - 1,
+        metadata.size - 1
+    );
 
     const stream = fs.createReadStream(path, { start, end });
 
@@ -99,7 +103,5 @@ app.get('/health',(req,res)=>{
 })
 
 app.listen(port,()=>{
-    const dir = fs.readdirSync("./tracks");
-    console.log(dir);
     console.log(`server running on port ${port}`);
 })
